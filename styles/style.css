@@ -1,0 +1,93 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 245, 245);
+}
+
+#container1{
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: #e0e0fa;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#container2{
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#container2 div {
+    margin-bottom: 20px;
+    margin-left: 10px
+}
+
+#formText{
+   margin-left: 40%;
+}
+
+input {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border: 1px solid #0400ff;
+    outline: none;
+}
+
+input:valid {
+    border: 1px solid #28A745;
+}
+
+input:invalid {
+    border: 1px solid #DC3545;
+}
+
+.hint {
+    font-size: 13px;
+    color: #888;
+}
+
+button {
+    color: white; 
+    text-align: center;
+    padding: 8px 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px; 
+    border: 1px solid #0400ff;
+    background: #0400ff;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+button:active{
+    color: #0400ff;
+    border: 1px solid #0400ff;
+    background-color: white; 
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+#values{
+    display: none;
+    margin-top: 20px;
+    max-width: 400px;
+    background-color: #e0e0fa;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

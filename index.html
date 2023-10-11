@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="styles/style.css"/> 
+</head>
+
+<body>
+    <div id="container1">
+        <form id="myForm">
+            <h2 id="formText">Form</h2>
+            <div id="container2">
+            <div>
+                <label for="textInput">Your name and surname:</label>
+                <input type="text" id="textInput" required>
+            </div>
+
+            <div>
+                <label for="numeralInput">Your height:</label><br>
+                <input type="number" id="numeralInput" required>
+            </div>
+    
+            <div>
+                <label for="rangeInput">How do you feel right now?</label><br>
+                <span>0%</span>
+                <input type="range" id="rangeInput" required>
+                <span>100%</span>
+
+            </div>
+    
+            <div>
+                <label for="datepicker">Your date of birth:</label><br>
+                <input type="date" id="datepicker" required>
+            </div>
+    
+            <div>
+                <label>Do you use Insatgram:</label><br>
+                <input type="radio" name="radioOption" id="radioOption1" value="Yes" required> Yes <br>
+                <input type="radio" name="radioOption" id="radioOption2" value="No" required> No
+            </div>
+    
+            <div>
+                <label for="emailInput">Your email:</label><br>
+                <input type="email" id="emailInput" required>
+            </div>
+    
+            <div>
+                <label for="passwordInput">Password (8-15 symbols):</label><br>
+                <input type="password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,15}" required><br>
+                <span class="hint">Must include at least 1 uppercase character, 1 lowercase character, 1 number, and 1 special character.</span>
+            </div>
+    
+            <div>
+                <label for="repeatPassword">Repeat Password:</label>
+                <input type="password" id="repeatPassword" required>
+            </div>
+    
+            <div id="error"></div>
+            
+            <button id="submit">Submit</button>
+            <div id="values"></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
